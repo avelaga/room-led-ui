@@ -4,13 +4,14 @@
   justify-content: center;
   align-items: center;
   max-width: 100%;
+  min-height: 100vh;
 }
 
 .button {
   width: 200px;
   height: 100px;
   background-color: aqua;
-  color: white;
+  /* color: white; */
   font-size: 40px;
   text-align: center;
   line-height: 100px;

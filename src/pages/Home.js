@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Slider from '@material-ui/core/Slider';
 import './pages.css';
 const axios = require("axios").default;
 
@@ -11,7 +12,7 @@ export class Home extends Component {
     };
   }
 
-  handleClick(num){
+  handleClick(num) {
     let url = "http://micropenis1.local:8000/hue?hue=" + num;
     axios
       .get(
@@ -26,14 +27,31 @@ export class Home extends Component {
     // console.log(num)
   }
 
+  onChangeCommitted = (event, newValue) => {
+    this.handleClick(newValue)
+  };
+
   render() {
     return (
       <div className="flex">
-        <div onClick={() => this.handleClick(0)} className="button" > 0 </div>
-        <div onClick={() => this.handleClick(145)} className="button" > 145 </div>
+        <div onClick={() => this.handleClick(0)} className="button" > Runway </div>
+        <Slider
+        // value={0}
+          onChange={this.onChangeCommitted}
+          valueLabelDisplay="auto"
+          aria-labelledby="range-slider"
+          style={sliderStyle}
+          min={1}
+          max={255}
+        />
       </div>
     )
   }
 }
 
 export default Home
+
+const sliderStyle = {
+  width: '200px',
+  margin: '10px'
+}
