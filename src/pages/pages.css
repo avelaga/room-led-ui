@@ -1,0 +1,24 @@
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.button {
+  width: 200px;
+  height: 100px;
+  background-color: aqua;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px;
+  border-radius: 100px;
+}
+
+.button:active {
+  background-color: white;
+  color: aqua;
+}
