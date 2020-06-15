@@ -32,6 +32,7 @@ export class Section extends Component {
     return (
       <div className="flex">
         <div onClick={() => this.handleClick(0)} className="button" > Runway </div>
+        <div onClick={() => this.handleClick(255)} className="button" > Twinkle </div>
         <Slider
           // value={0}
           onChange={this.onChangeCommitted}
@@ -39,7 +40,7 @@ export class Section extends Component {
           aria-labelledby="range-slider"
           style={sliderStyle}
           min={1}
-          max={255}
+          max={254}
         />
       </div>
     )
