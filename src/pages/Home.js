@@ -9,9 +9,9 @@ export class Home extends Component {
         {/* <h1>All</h1>
         <Section urls={["http://micropenis1.local:8000"],["http://micropenis2.local:8000"]}/> */}
         <h1>Wall</h1>
-        <Section urls={["http://micropenis1.local:8000"]}/>
+        <Section urls={["http://micropenis1.local"]}/>
         <h1>Closet</h1>
-        <Section urls={["http://micropenis2.local:8000"]}/>
+        <Section urls={["http://micropenis2.local"]}/>
       </div>
     )
   }
