@@ -1,11 +1,25 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* max-width: 100%; */
   min-height: 100vh;
   align-content: center;
+  background-image: url("../../dist/stars.png");
+  background-position: center;
+  background-size: cover;
+  animation-name: appear;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 h1 {

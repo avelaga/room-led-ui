@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Section from '../components/Section.js';
 import './pages.css';
+import '../../dist/stars.png'
 
 export class Home extends Component {
   render() {
